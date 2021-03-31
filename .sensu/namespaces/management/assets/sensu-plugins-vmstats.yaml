@@ -1,0 +1,37 @@
+type: Asset
+api_version: core/v2
+metadata:
+  annotations:
+    io.sensu.bonsai.api_url: https://bonsai.sensu.io/api/v1/assets/sensu-plugins/sensu-plugins-vmstats
+    io.sensu.bonsai.name: sensu-plugins-vmstats
+    io.sensu.bonsai.namespace: sensu-plugins
+    io.sensu.bonsai.tags: ruby-runtime-2.4.4
+    io.sensu.bonsai.tier: Community
+    io.sensu.bonsai.url: https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-vmstats
+    io.sensu.bonsai.version: 2.0.0
+  name: sensu-plugins/sensu-plugins-vmstats
+spec:
+  builds:
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform == 'alpine'
+    headers: null
+    sha512: d5f5127eb06f296eb71fef4bd28ca4f5e6982540b7393dedf92d8c09b7ea449baeda8b645f02dc3d0650c0f287d90c6d92b8508a160b0f2c5172c06ee9540350
+    url: https://assets.bonsai.sensu.io/5c97f93791b98b2542c5c9739e88ca28b76a95ac/sensu-plugins-vmstats_2.0.0_alpine_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'rhel'
+    headers: null
+    sha512: 366eb41a1ad3b7750d7de5f510b6a17393729eac09d4b786e9af440b8036a737fa3ff8da1e137238edce8585898fa936cf096c4c12c226f628d998ca59769e6f
+    url: https://assets.bonsai.sensu.io/5c97f93791b98b2542c5c9739e88ca28b76a95ac/sensu-plugins-vmstats_2.0.0_centos_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'debian'
+    headers: null
+    sha512: 6c19ba8bbc2f3a87b1dde5a1e759f8ab7bafc2b4c2c7063516a521ffae052892955adf596f2489a0dab135de3797695dd6f7428d64d06df78e0e8bfd228e4649
+    url: https://assets.bonsai.sensu.io/5c97f93791b98b2542c5c9739e88ca28b76a95ac/sensu-plugins-vmstats_2.0.0_debian_linux_amd64.tar.gz
+  filters: null
+  headers: null

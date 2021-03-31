@@ -1,0 +1,37 @@
+type: Asset
+api_version: core/v2
+metadata:
+  annotations:
+    io.sensu.bonsai.api_url: https://bonsai.sensu.io/api/v1/assets/sensu-plugins/sensu-plugins-ntp
+    io.sensu.bonsai.name: sensu-plugins-ntp
+    io.sensu.bonsai.namespace: sensu-plugins
+    io.sensu.bonsai.tags: ruby-runtime-2.4.4
+    io.sensu.bonsai.tier: Community
+    io.sensu.bonsai.url: https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-ntp
+    io.sensu.bonsai.version: 2.0.0
+  name: sensu-plugins/sensu-plugins-ntp
+spec:
+  builds:
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform == 'alpine'
+    headers: null
+    sha512: d270bf39ca9f49fc874dbd2703d3528b23f3c5c4da553aab8d62021aab6bcbbdb9d6c8087f5e04410c7c0488be6d8ecda3a92d51259cc8b78605f2163120958b
+    url: https://assets.bonsai.sensu.io/a24eea423200374c5b7f96082dd7e315fc1ea814/sensu-plugins-ntp_2.0.0_alpine_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform == 'rhel'
+    headers: null
+    sha512: 3ee7b68d91798775f70ee9cd037f98a82386ae9beccd069a4db262d6b69ef49db65a1415cc40c2a6c8726447f0cf4978a332968edf132cd79805ce4f68889a5a
+    url: https://assets.bonsai.sensu.io/a24eea423200374c5b7f96082dd7e315fc1ea814/sensu-plugins-ntp_2.0.0_centos_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform == 'debian'
+    headers: null
+    sha512: af36da579989ba8174d111c30f4cda47ee7df711c0d044d96a49adc9e42793270b7fe3dc943cabef453da1e52121ede4111cd4a22d249d30010aa7a1461d646c
+    url: https://assets.bonsai.sensu.io/a24eea423200374c5b7f96082dd7e315fc1ea814/sensu-plugins-ntp_2.0.0_debian_linux_amd64.tar.gz
+  filters: null
+  headers: null

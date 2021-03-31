@@ -1,0 +1,65 @@
+type: Asset
+api_version: core/v2
+metadata:
+  annotations:
+    io.sensu.bonsai.api_url: https://bonsai.sensu.io/api/v1/assets/sensu/sensu-ruby-runtime
+    io.sensu.bonsai.name: sensu-ruby-runtime
+    io.sensu.bonsai.namespace: sensu
+    io.sensu.bonsai.tags: ""
+    io.sensu.bonsai.tier: Community
+    io.sensu.bonsai.url: https://bonsai.sensu.io/assets/sensu/sensu-ruby-runtime
+    io.sensu.bonsai.version: 0.1.0
+  name: sensu/sensu-ruby-runtime
+spec:
+  builds:
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform == 'amazon'
+    - entity.system.platform_version.split('.')[0] == '2'
+    headers: null
+    sha512: a83aaa5a2ef64608d2bfee207fa2bbc2e97b6f19862c746118d88088015668f8a6ec03f3c25f0c2b6506fe91189b384223dc676ad438e419fc0adb5363e9177f
+    url: https://assets.bonsai.sensu.io/102d2b8c9dc264b98fa7973bf7657e9216bfb0a8/sensu-ruby-runtime_0.1.0_ruby-2.4.4_amzn2_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform == 'amazon'
+    - entity.system.platform_version.split('.')[0] == '2018'
+    headers: null
+    sha512: 7b504f0e3d57dec8141d01161ef3efe144b93f76a0b0b1c7f124a36ee73c82451a7a1542cb9afed0ad9d6e545b2e62d4e7f7ddf39013ae604cc82d9bf9b2866a
+    url: https://assets.bonsai.sensu.io/102d2b8c9dc264b98fa7973bf7657e9216bfb0a8/sensu-ruby-runtime_0.1.0_ruby-2.4.4_amzn1_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform != 'amazon'
+    - entity.system.platform_family == 'rhel'
+    - parseInt(entity.system.platform_version.split('.')[0]) == 8
+    headers: null
+    sha512: db4769fc5dba1597d640082f4dd8ef376b7c55410b13f36e0555472c49fcb5dedb35273d58c08ab9ec8851e8747a88b0a6c0fcbcdb0da8aa1bed9a31b0f9995a
+    url: https://assets.bonsai.sensu.io/102d2b8c9dc264b98fa7973bf7657e9216bfb0a8/sensu-ruby-runtime_0.1.0_ruby-2.4.4_centos8_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform != 'amazon'
+    - entity.system.platform_family == 'rhel'
+    - parseInt(entity.system.platform_version.split('.')[0]) == 7
+    headers: null
+    sha512: 2d7800432f90625a02aec4a10b084bc72e253572970694e932b5ccdc72fb30f5cf91ed4b51f90942965df5228e521b8f5f06da3d52b886b172ba08d4130251dc
+    url: https://assets.bonsai.sensu.io/102d2b8c9dc264b98fa7973bf7657e9216bfb0a8/sensu-ruby-runtime_0.1.0_ruby-2.4.4_centos7_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'debian'
+    headers: null
+    sha512: 956806ab6a1d12a3bdb476c2b5fb9b047db4394eafd6d5956554909db0f1b0367d9139c1f63b2ed966d3f5364e356adb424cc112888e09d2af316869d1a7ccb3
+    url: https://assets.bonsai.sensu.io/102d2b8c9dc264b98fa7973bf7657e9216bfb0a8/sensu-ruby-runtime_0.1.0_ruby-2.4.4_debian_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform == 'alpine'
+    - entity.system.platform_version.split('.')[0] == '3'
+    headers: null
+    sha512: 15af3667dce6f4f973b9b1818066a60d2542a22f9fd84dac017b7ae6597f1565ad7c8b9bf988eb7457ec42b69eabd347a90a0fc2d79910217bebd94b834312f2
+    url: https://assets.bonsai.sensu.io/102d2b8c9dc264b98fa7973bf7657e9216bfb0a8/sensu-ruby-runtime_0.1.0_ruby-2.4.4_alpine_linux_amd64.tar.gz
+  filters: null
+  headers: null

@@ -1,0 +1,6 @@
+---
+api_version: core/v2
+type: Namespace
+spec:
+  name: management
+

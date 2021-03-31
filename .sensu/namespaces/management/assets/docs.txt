@@ -1,0 +1,63 @@
+sensuctl asset add sensu/sensu-ruby-runtime -r sensu-ruby-runtime
+https://bonsai.sensu.io/assets/sensu/sensu-ruby-runtime
+
+sensuctl asset add sensu-plugins/sensu-plugins-chrony -r chrony-plugins
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-chrony
+
+sensuctl asset add sensu-plugins/sensu-plugins-dns -r dns-plugins
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-dns
+dep: sensu-ruby-runtime
+
+sensuctl asset add sensu-plugins/sensu-plugins-ssl
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-ssl
+dep: sensu-ruby-runtime
+
+sensuctl asset add sensu-plugins/sensu-plugins-systemd
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-systemd
+
+sensuctl asset add sensu-plugins/sensu-plugins-logs
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-logs
+
+sensuctl asset add sensu-plugins/sensu-plugins-ntp
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-ntp
+dep: sensu-ruby-runtime
+
+sensuctl asset add sensu-plugins/sensu-plugins-vmstats
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-vmstats
+dep: sensu-ruby-runtime
+
+sensuctl asset add sensu-plugins/sensu-plugins-cpu-checks
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-cpu-checks
+dep: sensu-ruby-runtime
+
+sensuctl asset add sensu-plugins/sensu-plugins-disk-checks
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-disk-checks
+dep: sensu-ruby-runtime
+
+sensuctl asset add sensu-plugins/sensu-plugins-filesystem-checks
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-filesystem-checks
+dep: sensu-ruby-runtime 
+
+sensuctl asset add sensu-plugins/sensu-plugins-load-checks
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-load-checks
+
+sensuctl asset add sensu-plugins/sensu-plugins-memory-checks
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-memory-checks
+
+sensuctl asset add sensu-plugins/sensu-plugins-network-checks
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-network-checks
+
+sensuctl asset add sensu-plugins/sensu-plugins-process-checks
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-process-checks
+dep: sensu-ruby-runtime 
+
+sensuctl asset add sensu-plugins/sensu-plugins-http
+https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-http
+dep: sensu-ruby-runtime
+
+sensuctl asset add sensu/monitoring-plugins
+https://bonsai.sensu.io/assets/sensu/monitoring-plugins
+https://www.monitoring-plugins.org/doc/man/index.html
+
+sensuctl asset add sensu/sensu-slack-handler
+https://bonsai.sensu.io/assets/sensu/sensu-slack-handler
