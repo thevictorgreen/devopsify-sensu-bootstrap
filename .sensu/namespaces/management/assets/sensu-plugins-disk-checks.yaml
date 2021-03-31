@@ -1,0 +1,54 @@
+type: Asset
+api_version: core/v2
+metadata:
+  annotations:
+    io.sensu.bonsai.api_url: https://bonsai.sensu.io/api/v1/assets/sensu-plugins/sensu-plugins-disk-checks
+    io.sensu.bonsai.name: sensu-plugins-disk-checks
+    io.sensu.bonsai.namespace: sensu-plugins
+    io.sensu.bonsai.tags: ruby-runtime-2.4.4
+    io.sensu.bonsai.tier: Community
+    io.sensu.bonsai.url: https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-disk-checks
+    io.sensu.bonsai.version: 5.1.4
+  name: sensu-plugins/sensu-plugins-disk-checks
+spec:
+  builds:
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'rhel'
+    - parseInt(entity.system.platform_version.split('.')[0]) == 8
+    headers: null
+    sha512: ac0c130d923888fad40a9faeebdbee4033a78f3970d3fa8b68897f861425855c000b8c4d72ccd42aaf1ae72141974e7d1646cf54fd12fd3532ae97d2dfa01d71
+    url: https://assets.bonsai.sensu.io/9fb504d0f58ed6c388ea5e390b163bb62bd7b23b/sensu-plugins-disk-checks_5.1.4_centos8_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'rhel'
+    - parseInt(entity.system.platform_version.split('.')[0]) == 7
+    headers: null
+    sha512: 81af33bba9e6c6fbd79ab939e7aece3e0cdbd2ab8b08f62a9a446b00aa1aa47970df23e07ce2d2bf039e04cd99576d444378ad6cb8bbe7d221c30ca5b6bc77bc
+    url: https://assets.bonsai.sensu.io/9fb504d0f58ed6c388ea5e390b163bb62bd7b23b/sensu-plugins-disk-checks_5.1.4_centos7_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'rhel'
+    - parseInt(entity.system.platform_version.split('.')[0]) == 6
+    headers: null
+    sha512: e909a10b350356273b5a9e42eb07d6afbe982b775c9a76f3aa468adb1858908207b87abcd6258fb5831326946c541ebc72230bbc9a3b340c3ac5549cd9a06d3d
+    url: https://assets.bonsai.sensu.io/9fb504d0f58ed6c388ea5e390b163bb62bd7b23b/sensu-plugins-disk-checks_5.1.4_centos6_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'debian'
+    headers: null
+    sha512: a10b8243e138df99493234f9b4dade2b41dbf93260a445c8273cc988878a7cf27fc7ea99b3580685a0d944721921435ef23cb0be0f3d1ac48dc5bd922b2f3521
+    url: https://assets.bonsai.sensu.io/9fb504d0f58ed6c388ea5e390b163bb62bd7b23b/sensu-plugins-disk-checks_5.1.4_debian_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform == 'alpine'
+    headers: null
+    sha512: cb9503120c372c2db5aac97d76e3790630452e3f2ee4211c071da71ae43cc4ca1427bc9aed67a5c3bac89631cace227654a7e851b4dac5a5072e4148f23b0d17
+    url: https://assets.bonsai.sensu.io/9fb504d0f58ed6c388ea5e390b163bb62bd7b23b/sensu-plugins-disk-checks_5.1.4_alpine_linux_amd64.tar.gz
+  filters: null
+  headers: null

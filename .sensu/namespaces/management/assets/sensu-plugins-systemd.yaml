@@ -1,0 +1,62 @@
+type: Asset
+api_version: core/v2
+metadata:
+  annotations:
+    io.sensu.bonsai.api_url: https://bonsai.sensu.io/api/v1/assets/sensu-plugins/sensu-plugins-systemd
+    io.sensu.bonsai.name: sensu-plugins-systemd
+    io.sensu.bonsai.namespace: sensu-plugins
+    io.sensu.bonsai.tags: systemd
+    io.sensu.bonsai.tier: Community
+    io.sensu.bonsai.url: https://bonsai.sensu.io/assets/sensu-plugins/sensu-plugins-systemd
+    io.sensu.bonsai.version: 0.2.1
+  name: sensu-plugins/sensu-plugins-systemd
+spec:
+  builds:
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'debian'
+    - entity.system.platform_version.split('.')[0] == '9'
+    headers: null
+    sha512: e0943064c17ea401ec279ca1658e375f85334e1bcac498c1e28d77e4323e9551f9d7eb60e6760593e491c622bf3c80333a222c6e9a41d24fbf76ab71c9f5de81
+    url: https://assets.bonsai.sensu.io/b27eac08e05f87c966627b02dd11c41f71009c23/sensu-plugins-systemd_0.2.1_debian9_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'debian'
+    headers: null
+    sha512: 689668817436637242616acf3aafbe833b512c20bb9540391c69f9b812670e60f52223e3364bbfe8ea42ce114f99a3d0886d92b2142c65abcd44eb192d1ecb34
+    url: https://assets.bonsai.sensu.io/b27eac08e05f87c966627b02dd11c41f71009c23/sensu-plugins-systemd_0.2.1_debian_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'rhel'
+    - entity.system.platform_version.split('.')[0] == '7'
+    headers: null
+    sha512: 7a6c78df9e24b8454e897821a653c7472c9ede73fbd69bf3d51b9f9c5d9054574d0a37a378d3c40cea8691c6c4d0e4a6f90da9d0056fad8bc71cb1e799f78784
+    url: https://assets.bonsai.sensu.io/b27eac08e05f87c966627b02dd11c41f71009c23/sensu-plugins-systemd_0.2.1_centos7_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform_family == 'rhel'
+    - entity.system.platform_version.split('.')[0] == '6'
+    headers: null
+    sha512: a1153bbd8f4ff6fe74720ddfa51d2c72e2f7af7e174b3c779306c75530905807ca9c2abb143ed2d6c562939b85c25fcb6c8054be36532c616b8f96520d43b1e6
+    url: https://assets.bonsai.sensu.io/b27eac08e05f87c966627b02dd11c41f71009c23/sensu-plugins-systemd_0.2.1_centos6_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform == 'alpine'
+    headers: null
+    sha512: 9107cb3238005dba8514be7129cc02ed8b5c48bcc181dc8fff3b026d8f407a04d362253a530ad67fe3d23e43677f7e03b68ed6f090fd5a482b48cc6a00f11ee8
+    url: https://assets.bonsai.sensu.io/b27eac08e05f87c966627b02dd11c41f71009c23/sensu-plugins-systemd_0.2.1_alpine3.8_linux_amd64.tar.gz
+  - filters:
+    - entity.system.os == 'linux'
+    - entity.system.arch == 'amd64'
+    - entity.system.platform == 'alpine'
+    - entity.system.platform_version.split('.')[0] == '3'
+    headers: null
+    sha512: 6c051c52768e2392ed488d12b774cb2a31c3336956c26667042d141d91877d342d7a7f2465d0d2736e10fcffee22c38b48785d45c13daad442b4d09f11d7dcd2
+    url: https://assets.bonsai.sensu.io/b27eac08e05f87c966627b02dd11c41f71009c23/sensu-plugins-systemd_0.2.1_alpine_linux_amd64.tar.gz
+  filters: null
+  headers: null
