@@ -1,0 +1,9 @@
+type: HookConfig
+api_version: core/v2
+metadata:
+  name: process_tree
+spec:
+  command: ps -eo pcpu,pid,user,args | sort -k 1 -r | head -10
+  runtime_assets: null
+  stdin: false
+  timeout: 10

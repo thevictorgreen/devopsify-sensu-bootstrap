@@ -1,0 +1,8 @@
+type: EventFilter
+api_version: core/v2
+metadata:
+  name: filter-state-change-only
+spec:
+  action: allow
+  expressions:
+  - event.check.occurrences == 1

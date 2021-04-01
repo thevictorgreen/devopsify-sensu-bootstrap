@@ -7,20 +7,22 @@ spec:
   type: pipe
   command: sensu-slack-handler --channel '#devops'
   filters:
-  - is_incident
+  - filter-incidents-not-silenced
+  - filter-state-change-only
+  - filter-environment-management
   runtime_assets:
   - sensu/sensu-slack-handler
   secrets:
   - name: SLACK_WEBHOOK_URL
-    secret: sensu_default_slack_webhook_url
+    secret: sensu_management_slack_webhook_url
   timeout: 0
 ---
 type: Secret
 api_version: secrets/v1
 metadata:
-  name: sensu_default_slack_webhook_url
+  name: sensu_management_slack_webhook_url
 spec:
-  id: SENSU_DEFAULT_SLACK_WEBHOOK_URL
+  id: SENSU_MANAGEMENT_SLACK_WEBHOOK_URL
   provider: env
 ---
 type: Asset

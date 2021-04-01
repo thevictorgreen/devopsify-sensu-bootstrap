@@ -4,7 +4,9 @@ api_version: core/v2
 metadata:
   name: cpu
 spec:
-  check_hooks: null
+  check_hooks:
+  - critical:
+    - process_tree
   command: check_load --warn 0.70 --critical 0.90
   env_vars: null
   handlers:

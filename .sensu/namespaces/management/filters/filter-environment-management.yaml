@@ -1,0 +1,8 @@
+type: EventFilter
+api_version: core/v2
+metadata:
+  name: filter-environment-management
+spec:
+  action: allow
+  expressions:
+  - event.entity.labels['environment'] == 'management'
